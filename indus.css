@@ -1,0 +1,80 @@
+/* 文字內容貼齊邊界,項目符號取消 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 頁首標題設定 */
+header{
+    background-color: #c4c4c4;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* 大標題 */
+header h1{
+    font-size: 2.5rem;
+}
+
+/* icon */
+header h1 i {
+    font-style: 3rem;
+}
+
+/* 導覽列背景設定 */
+nav{
+    background-color: #312F2F;
+}
+
+/* 導覽列橫向浮動 */
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+/* 導覽列間距padding */
+nav ul li{
+    padding: 0.5rem 0.75rem;
+}
+
+/* 導覽列連結間距padding */
+nav ul li a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+/* 導覽列連結滑鼠效果 */
+nav ul li a:hover{
+     /* color: yellow; */
+     background-color: yellow;
+}
+
+
+section.contain{
+    padding: 2rem;
+}
+
+/* 內容區分為left/right向右浮動 */
+section.content{
+    display: flex;
+}
+
+/* 內容與上層導覽列間距 */
+section.left{
+    padding: 2rem;
+}
+
+/* 內容與上層導覽列間距 */
+section.right{
+    padding: 2rem;
+}
+
+/* h5標題 */
+/* section.right h5{
+    font-size: 1.25rem;
+    text-align: center;
+} */
+

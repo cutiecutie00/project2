@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// 變數 $(數字,字符串,顏色,布林值,空值(null),列表(list):用空格或逗號分開,)遇到多次相同的顏色、字型、字體大小等重複出現，只需改最源頭的變數值即可，其他所有引用該變數值的地方，值都會自動更改。
+$fontSize:1.25rem;
+$color:blue;
+
+// 導入功能 @import :導入其他的SCSS子樣式，如(_header.scss)，被導入的 SASS 或 SCSS 子文件，會全部合併到同一個 CSS 文件呈現。
+@import "./_header";
+@import "./_nav";
+
+section.content{
+    display: flex;
+}
+
+section.left{
+    padding: 2rem;
+}
+
+section.right{
+    padding: 2rem;
+
+    h5{
+        font-size: $fontSize;
+        text-align: center;
+    }
+}
+// 使用 @mixin 定義一個「 混合 」
+@mixin flexbox($direction, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+// 使用 @include 引用一個「 混合 」,可引用多個
+div.link1{
+    @include flexbox(row, wrap);
+}
+
+// @extend 繼承 開頭使用%
+%div{
+    color: red;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+div.p{
+    @extend %div;
+    color: black
+}
+
+.header{
+    @extend %div;
+}
+
+// 運算字符:SassScript 支援數字的運算,且除法需使用"括號",css語法無法直接進行數字運算
+div{
+    $width: 1200px;
+    width: $width/2;
+    width: (1000px/2);
+    font: (15px/2);
+    width: 10px+(5px/2);
+}

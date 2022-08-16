@@ -1,0 +1,23 @@
+nav{
+    background-color: #312F2F;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding-left: 1rem;
+        
+        li{
+            padding: 0.5rem 0.75rem;
+
+            a{
+                font-size: $fontSize;
+                text-decoration: none;
+                color: $color;
+
+                &:hover{
+                    background-color: yellow;
+                }
+            }
+        }
+    }
+}

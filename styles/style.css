@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: blue;
+  width: 100%;
+  padding: 1rem;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header h1 i {
+  font-size: 3rem;
+}
+
+nav {
+  background-color: #312F2F;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+nav ul li a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: blue;
+}
+nav ul li a:hover {
+  background-color: yellow;
+}
+
+section.content {
+  display: flex;
+}
+
+section.left {
+  padding: 2rem;
+}
+
+section.right {
+  padding: 2rem;
+}
+section.right h5 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+div.link1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header, div.p {
+  color: red;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+div.p {
+  color: black;
+}
+
+div {
+  width: 600px;
+  width: 500px;
+  font: 7.5px;
+  width: 12.5px;
+}/*# sourceMappingURL=style.css.map */
